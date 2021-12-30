@@ -71,7 +71,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       second_min_c: min_tc2,
       third_max_c: max_tc3,
       third_min_c: min_tc3,
-      fourth_max_C: max_tc4,
+      fourth_max_c: max_tc4,
       fourth_min_c: min_tc4,
       //render farenhite
       first_max_f: max_tf1,
@@ -157,7 +157,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
           second_min_c: min_tc2,
           third_max_c: max_tc3,
           third_min_c: min_tc3,
-          fourth_max_C: max_tc4,
+          fourth_max_c: max_tc4,
           fourth_min_c: min_tc4,
           //render farenhite
           first_max_f: max_tf1,

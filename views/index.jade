@@ -56,13 +56,14 @@ block content
                   |                   
                   .d-flex.flex-column.text-center.mt-5.mb-4
                   h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
-                    | 12 pm - 6 am
+                    | 12 am - 6 am
                     h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
                       |Max: #{first_max_c}&deg;C
                       |Min:#{first_min_c}&deg;C
                     |                     
-                    h6.display-6.mb-0.font-weight-bold.phd(style='display: none')
-                      | 13&deg;f
+                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                      |Max: #{first_max_f} F
+                      |Min:#{first_min_f} F
                    
                               
                   .d-flex.align-items-center
@@ -84,21 +85,27 @@ block content
                     |                     
                     div
                      img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
-            // card2
-            .col-md-3.col-lg-3.col-xl-3
+                 //card2
+             .col-md-3.col-lg-3.col-xl-3
               .card(style='color: #000000; border-radius: 30px')
                 .card-body.p-4
                   .d-flex
-                    h6.flex-grow-1 Warsaw
+                    h6.flex-grow-1 #{cityName}
                     |                     
-                    h6 15:07
+                    h6 #{localTime}
                   |                   
                   .d-flex.flex-column.text-center.mt-5.mb-4
-                    h6.display-4.mb-0.font-weight-bold(style='color: #1c2331')
-                      | 13&deg;C
+                  h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
+                    | 6 am - 12pm
+                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                      |Max: #{second_max_c}&deg;C
+                      |Min:#{second_min_c}&deg;C
                     |                     
-                    span.small(style='color: #868b94') Stormy
-                  |                   
+                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                      |Max: #{second_max_f} F
+                      |Min:#{second_min_f} F
+                   
+                              
                   .d-flex.align-items-center
                     .flex-grow-1(style='font-size: 1rem')
                       div
@@ -117,22 +124,28 @@ block content
                         span.ms-1  0.2h 
                     |                     
                     div
-                      img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
-            // card3
-            .col-md-3.col-lg-3.col-xl-3
+                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                //card3
+             .col-md-3.col-lg-3.col-xl-3
               .card(style='color: #000000; border-radius: 30px')
                 .card-body.p-4
                   .d-flex
-                    h6.flex-grow-1 Warsaw
+                    h6.flex-grow-1 #{cityName}
                     |                     
-                    h6 15:07
+                    h6 #{localTime}
                   |                   
                   .d-flex.flex-column.text-center.mt-5.mb-4
-                    h6.display-4.mb-0.font-weight-bold(style='color: #1c2331')
-                      | 13&deg;C
+                  h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
+                    | 12 pm - 6pm
+                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                      |Max: #{third_max_c}&deg;C
+                      |Min:#{third_min_c}&deg;C
                     |                     
-                    span.small(style='color: #868b94') Stormy
-                  |                   
+                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                      |Max: #{third_max_f} F
+                      |Min:#{third_min_f} F
+                   
+                              
                   .d-flex.align-items-center
                     .flex-grow-1(style='font-size: 1rem')
                       div
@@ -151,22 +164,28 @@ block content
                         span.ms-1  0.2h 
                     |                     
                     div
-                      img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
             // card4
             .col-md-3.col-lg-3.col-xl-3
               .card(style='color: #000000; border-radius: 30px')
                 .card-body.p-4
                   .d-flex
-                    h6.flex-grow-1 Warsaw
+                    h6.flex-grow-1 #{cityName}
                     |                     
-                    h6 15:07
+                    h6 #{localTime}
                   |                   
                   .d-flex.flex-column.text-center.mt-5.mb-4
-                    h6.display-4.mb-0.font-weight-bold(style='color: #1c2331')
-                      | 13&deg;C
+                  h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
+                    | 6pm - 12 pm
+                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                      |Max: #{fourth_max_c}&deg;C
+                      |Min:#{fourth_min_c}&deg;C
                     |                     
-                    span.small(style='color: #868b94') Stormy
-                  |                   
+                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                      |Max: #{fourth_max_f} F
+                      |Min:#{fourth_min_f} F
+                   
+                              
                   .d-flex.align-items-center
                     .flex-grow-1(style='font-size: 1rem')
                       div
@@ -185,4 +204,4 @@ block content
                         span.ms-1  0.2h 
                     |                     
                     div
-                      img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
