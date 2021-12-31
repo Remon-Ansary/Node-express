@@ -7,7 +7,7 @@
 - npm i
 - npm start
 
--Example of the route: http://localhost:3000/all/India/Delhi/2021-12-28
+- Example of the route: http://localhost:3000/all/India/Delhi/2021-12-28
 
 ## Tools used:
 
