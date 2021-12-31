@@ -25,6 +25,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
     //check data
     var cityName = object.location.name;
     var localTime = object.location.localtime;
+    date = object.forecast.forecastday[0].date;
     var countryName = object.location.country;
     var icon = object.forecast.forecastday[0].day.condition.icon;
     var wind = object.forecast.forecastday[0].day.maxwind_kph;
@@ -95,6 +96,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
         fourth_min_f: min_tf4,
         cityName: cityName,
         localTime: localTime,
+        date: date,
         countryName: countryName,
         icon: icon,
         wind: wind,
@@ -199,6 +201,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
             //other data
             cityName: cityName,
             localTime: localTime,
+            date: date,
             countryName: countryName,
             icon: icon,
             wind: wind,
@@ -214,7 +217,5 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       });
   }
 });
-
-// module.exports = app;
 
 module.exports = router;
