@@ -29,11 +29,14 @@ block content
   body
   
     
-    section.vh-100(style='background-color: rgb(190, 190, 190)')
+    section.vh-(style='background-color: rgb(242, 242, 242)')
       .container.py-5.h-100
+       .wrapper
+          .typing-demo
+            | Weather data of 
+            b #{cityName} #{countryName}
         .row.d-flex.justify-content-left.align-items-center.h-100
           .row
-            // hello
             .row
               .col-md-4
                 div
@@ -57,11 +60,11 @@ block content
                   .d-flex.flex-column.text-center.mt-5.mb-4
                   h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
                     | 12 am - 6 am
-                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                    h4.display-8.mb-0.font-weight-bold.np(style='color: #1c2331')
                       |Max: #{first_max_c}&deg;C
                       |Min:#{first_min_c}&deg;C
                     |                     
-                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                    h4.display-8.mb-0.font-weight-bold.sh(style='display: none')
                       |Max: #{first_max_f} F
                       |Min:#{first_min_f} F
                    
@@ -71,20 +74,20 @@ block content
                       div
                         i.fas.fa-wind.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  40 km/h 
+                        span.ms-1  #{wind}
                       |                       
                       div
                         i.fas.fa-tint.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  84% 
+                        span.ms-1  #{humidity}
                       |                       
                       div
                         i.fas.fa-sun.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  0.2h 
+                        span.ms-1  #{uv}
                     |                     
                     div
-                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                     img(src='https:#{icon}', width='100px')
                  //card2
              .col-md-3.col-lg-3.col-xl-3
               .card(style='color: #000000; border-radius: 30px')
@@ -97,11 +100,11 @@ block content
                   .d-flex.flex-column.text-center.mt-5.mb-4
                   h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
                     | 6 am - 12pm
-                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                    h4.display-8.mb-0.font-weight-bold.np(style='color: #1c2331')
                       |Max: #{second_max_c}&deg;C
                       |Min:#{second_min_c}&deg;C
                     |                     
-                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                    h4.display-8.mb-0.font-weight-bold.sh(style='display: none')
                       |Max: #{second_max_f} F
                       |Min:#{second_min_f} F
                    
@@ -111,20 +114,20 @@ block content
                       div
                         i.fas.fa-wind.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  40 km/h 
+                        span.ms-1  #{wind}
                       |                       
                       div
                         i.fas.fa-tint.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  84% 
+                        span.ms-1  #{humidity}
                       |                       
                       div
                         i.fas.fa-sun.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  0.2h 
+                        span.ms-1  #{uv}
                     |                     
                     div
-                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                     img(src='https:#{icon}', width='100px')
                 //card3
              .col-md-3.col-lg-3.col-xl-3
               .card(style='color: #000000; border-radius: 30px')
@@ -137,11 +140,11 @@ block content
                   .d-flex.flex-column.text-center.mt-5.mb-4
                   h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
                     | 12 pm - 6pm
-                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                    h4.display-8.mb-0.font-weight-bold.np(style='color: #1c2331')
                       |Max: #{third_max_c}&deg;C
                       |Min:#{third_min_c}&deg;C
                     |                     
-                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                    h4.display-8.mb-0.font-weight-bold.sh(style='display: none')
                       |Max: #{third_max_f} F
                       |Min:#{third_min_f} F
                    
@@ -151,20 +154,20 @@ block content
                       div
                         i.fas.fa-wind.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  40 km/h 
+                        span.ms-1  #{wind}
                       |                       
                       div
                         i.fas.fa-tint.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  84% 
+                        span.ms-1  #{humidity}
                       |                       
                       div
                         i.fas.fa-sun.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  0.2h 
+                        span.ms-1  #{uv}
                     |                     
                     div
-                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                     img(src='https:#{icon}', width='100px')
             // card4
             .col-md-3.col-lg-3.col-xl-3
               .card(style='color: #000000; border-radius: 30px')
@@ -177,11 +180,11 @@ block content
                   .d-flex.flex-column.text-center.mt-5.mb-4
                   h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
                     | 6pm - 12 pm
-                    h4.display-8.mb-0.font-weight-bold.ug(style='color: #1c2331')
+                    h4.display-8.mb-0.font-weight-bold.np(style='color: #1c2331')
                       |Max: #{fourth_max_c}&deg;C
                       |Min:#{fourth_min_c}&deg;C
                     |                     
-                    h4.display-8.mb-0.font-weight-bold.phd(style='display: none')
+                    h4.display-8.mb-0.font-weight-bold.sh(style='display: none')
                       |Max: #{fourth_max_f} F
                       |Min:#{fourth_min_f} F
                    
@@ -191,17 +194,17 @@ block content
                       div
                         i.fas.fa-wind.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  40 km/h 
+                        span.ms-1   #{wind}
                       |                       
                       div
                         i.fas.fa-tint.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  84% 
+                        span.ms-1  #{humidity}
                       |                       
                       div
                         i.fas.fa-sun.fa-fw(style='color: #868b94')
                         |                         
-                        span.ms-1  0.2h 
+                        span.ms-1  #{uv}
                     |                     
                     div
-                     img(src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp', width='100px')
+                     img(src='https:#{icon}', width='100px')

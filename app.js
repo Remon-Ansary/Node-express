@@ -7,12 +7,17 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var app = express();
+var ip = require("ip");
 const rateLimit = require("express-rate-limit");
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
 const limitReached = (req, res) => {
-  res.send("Too many request from this IP Please wait 10 seconds");
+  res.send(
+    "Your Ip address" +
+      ip.address() +
+      " has reached the limit please wait 10 second"
+  );
 };
 const limiter = rateLimit({
   windowMs: 10000,

@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $('[name="graduate"]').change(function () {
     if ($('[name="graduate"]:checked').is(":checked")) {
-      $(".ug").hide();
-      $(".phd").show();
+      $(".np").hide();
+      $(".sh").show();
     } else {
-      $(".ug").show();
-      $(".phd").hide();
+      $(".np").show();
+      $(".sh").hide();
     }
   });
 });
