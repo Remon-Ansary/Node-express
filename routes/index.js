@@ -118,8 +118,8 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
 
         var object = JSON.parse(jsonObject);
         if (
-          country === object.location.country &&
-          city === object.location.name
+          req.params.country === object.location.country &&
+          req.params.city === object.location.name
         ) {
           fs.writeFileSync(
             path.resolve(__dirname, "./data.json"),
@@ -206,7 +206,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
             uv: uv,
           });
         } else {
-          res.send("No Data Found");
+          res.send("Country: " + country + " City:" + city + " not found");
         }
       })
       .catch((error) => {
