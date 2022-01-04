@@ -43,14 +43,14 @@ block content
                   span  Celcious
                   |                   
                   label.switch
-                    input(type='checkbox', name='graduate')
+                    input(type='checkbox', name='checkbox')
                     |                     
                     span.slider.round
                   |                   
                   span.text-primary  Farenhite
             // card1
             .col-md-3.col-lg-3.col-xl-3.pb-2
-              .card(style='color: #000000; border-radius: 30px')
+              .card.my(style='color: #000000; border-radius: 30px')
                 .card-body.p-4
                   .d-flex
                     h6.flex-grow-1 #{cityName}
@@ -179,7 +179,7 @@ block content
                   |                   
                   .d-flex.flex-column.text-center.mt-5.mb-4
                   h6.display-6.flex-column.text-center.mb-0.font-weight-bold(style='color: #1c2331')
-                    | 6pm - 12 pm
+                    | 6pm - 12 am
                     h4.display-8.mb-0.font-weight-bold.np(style='color: #1c2331')
                       |Max: #{fourth_max_c}&deg;C
                       |Min:#{fourth_min_c}&deg;C

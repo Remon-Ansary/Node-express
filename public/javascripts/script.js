@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $('[name="graduate"]').change(function () {
-    if ($('[name="graduate"]:checked').is(":checked")) {
+  $('[name="checkbox"]').change(function () {
+    if ($('[name="checkbox"]:checked').is(":checked")) {
       $(".np").hide();
       $(".sh").show();
     } else {
