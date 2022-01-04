@@ -7,7 +7,7 @@
 - npm i
 - npm start
 
-- Example of the route: http://localhost:3000/all/India/Delhi/2021-12-28
+- Example of the route: http://localhost:3000/all/Bangladesh/Dhaka/2022-01-03
 
 ## Tools used:
 
@@ -34,6 +34,6 @@ https://www.weatherapi.com/
 
 ## Screenshots
 
-!["upper portion"](https://i.ibb.co/zxYWDGg/weather.png)
+!["upper portion"](https://i.ibb.co/kywhv7j/data1.png)
 
-!["upper portion"](https://i.ibb.co/Bsj8r43/weather1.png)
+!["upper portion"](https://i.ibb.co/RbrJhrc/data2.png)
